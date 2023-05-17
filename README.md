@@ -8,12 +8,12 @@ Download or clone the repository and open in code editor.
 ### Create environment and Install Packages
 If using Anaconda or Miniconda:
   ``` 
-  conda create --name <env_name> --file requirements.txt
+  $ conda create --name <env_name> --file requirements.txt
   ```
 
 If using pip,
   ```
-  pip install -r requirements.txt
+  $ pip install -r requirements.txt
   ```
 
 ## Usage
@@ -30,6 +30,12 @@ Data splits from the datasets [Wikipedia (Chameleon) and Wikipedia (Crocodile)](
 4. Epochs: The number of epochs used for training LEAP; can take any integer value. 
 
 [leap.py](leap.py) contains the code for implementation of the LEAP method. It imports classes from the files [MLP.py](https://github.com/torileatherman/link_prediction_LEAP/tree/main/models/MLP.py) and [model.py](https://github.com/torileatherman/link_prediction_LEAP/tree/main/models/model.py) for use. This will train and validate the model through the predetermined epochs, and output a testing score in terms of AUC and AP.
+
+### To run
+After setting the desired hyperparameters in [utils.py](utils.py), run the method LEAP using the following in the terminal:
+```
+$ python leap.py
+```
 
 
 
